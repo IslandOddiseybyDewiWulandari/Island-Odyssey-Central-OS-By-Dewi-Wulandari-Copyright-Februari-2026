@@ -1,0 +1,642 @@
+Buatkan aplikasi web responsive "Island Odyssey Central OS" berbasis React dan Tailwind CSS dengan 19 Role Dashboard. Pastikan TIDAK MENGHAPUS atau MERUSAK fitur yang sudah ada sebelumnya.
+
+I. LANDING PAGE & HERO SECTION
+
+1. Header / Hero Section:
+   · Logo dan Nama Aplikasi: "ISLAND ODYSSEY" - Integrated Digital Social Enterprise Ecosystem.
+   · Headline menarik tentang kedaulatan wilayah 3T & Non-3T.
+   · Tombol CTA Utama: "Download Aplikasi" (dengan ikon Google Play Store & App Store).
+   · Mockup Tampilan Aplikasi HP di sebelah kanan/tengah.
+   · Tagline: "Integrated Disaster Management & Zero-Leakage Crisis Relief Platform".
+   · Tombol CTA: "Jelajahi Platform" dan tombol merah "Emergency Mode / Posko Darurat".
+2. Ringkasan Fitur & Fitur Utama (8 Core Engine):
+   Tampilkan card/grid interaktif untuk fitur-fitur aplikasi:
+   · Market/UMKM, Wallet/Keuangan, UARS/Tenaga Kerja, Monitoring System, Asuransi, Logistik, Pendidikan, dan Bantuan Sosial.
+3. Seksi Dampak (Statistik Impact):
+   · Menampilkan data: 12.348 Penerima Manfaat, 248 Desa, 5.120 Program Aktif, 8 Wilayah.
+4. Seksi Download App (Call to Action Bawah):
+   · Banner ajakan download dengan tombol "Get it on Google Play" dan "Download on the App Store".
+5. Styling:
+   · Tema warna Deep Ocean Blue (#0B3C5D), Emerald Green, dan Cyan.
+   · Tampilan modern, clean, dan responsif (bagus diakses via HP maupun Laptop).
+
+II. AUTHENTICATION & LOGIN (ROLE-BASED ACCESS CONTROL)
+
+1. Halaman Login Utama dengan Quick-Role Switcher Demo untuk 19 Role:
+   · Founder, Admin Pusat, Konsorsium Global/Diplomat, HR Pusat, HR Lapangan Per Region, Staff Pusat, Staff Operasional Lapangan, Tim Eksekutor Harian, Tim QC, Tim Audit KAP & Freelance, Shadow Team/Whistleblowing, Tim Keuangan & Escrow, Risk & ERRS Manager, Armada Laut, Armada Darat, Armada Udara, Mitra Strategis, Warga/Beneficiary.
+2. Navbar atas menyediakan tombol "Switch Role / Logout" dan indikator role aktif.
+3. Role Switcher / View Toggle di header kanan atas untuk berpindah antar 19 tampilan role secara instan.
+
+III. DASHBOARD MULTI-TABS PER ROLE (19 ROLE DASHBOARD)
+
+Tampilkan Dashboard Analytics Interaktif (Dark slate theme, emergency red accents, vibrant blue/teal metrics) yang berubah penampilannya sesuai 19 role pengguna saat login:
+
+1. Founder Dashboard (Pusat Komando Eksekutif):
+   · Ringkasan: Pengawasan makro seluruh 8 Engine, alokasi investasi, dan dampak proyek nasional.
+   · Widget Utama: Kartu Ringkasan Eksekutif (Capital Deployed Rp 850M, SROI, Total Lapangan Kerja, Indeks Diplomasi), Peta Geospasial Node 3T, dan Panel Persetujuan Anggaran Strategis.
+2. Admin Pusat Dashboard:
+   · Ringkasan: Manajemen sistem, master data, pengaturan keamanan, dan konfigurasi platform.
+   · Widget Utama: Pemantau Kesehatan Node & Jaringan (SHA-256, Sync LoRa/Satelit), Manajemen Pengguna & Hak Akses (RBAC), Integrasi Master Data 248 Kategori Penerima Manfaat, dan Log Keamanan Sistem.
+3. Konsorsium Global / Diplomat Mitra Dashboard:
+   · Ringkasan: Pemantauan perdagangan luar negeri, media global, dan penetapan kebijakan konsorsium.
+   · Widget Utama: Katalog Ekspor Lintas Batas (Status Pabean & Tonase), Pemantau Media Global & Indeks Diplomasi, serta Panel Voting Multilateral yang dilengkapi Tombol Hak Veto Konsorsium 6 Negara.
+4. HR Pusat Dashboard (Perencanaan SDM Nasional):
+   · Ringkasan: Pengelolaan tenaga kerja nasional dan pemetaan keahlian warga.
+   · Widget Utama: Matriks Alokasi Tenaga Kerja (Tahapan Karir Warga 1–6), Database Keahlian Warga (Filter Sertifikasi & Lokasi), dan Peta Kebutuhan Tenaga Kerja Lapangan.
+5. HR Lapangan Per Region Dashboard:
+   · Ringkasan: Manajemen tugas harian, absensi lokal, dan pendaftaran pekerja di tingkat kabupaten/kota.
+   · Widget Utama: Papan Penugasan Posko/Hub 3T, Umpan Absensi Biometrik & GPS Lapangan, dan Pemantau Kemajuan Karir Pekerja Lokal.
+6. Staff Pusat Dashboard (Administrasi & Eksekusi Program):
+   · Ringkasan: Verifikasi dokumen pengajuan, administrasi alokasi dana, dan penyusunan laporan pusat.
+   · Widget Utama: Hub Pengolahan Dokumen & Progam, Monitoring Jadwal Program Nasional (Gantt Chart), dan Terminal Pelaporan Internal.
+7. Staff Operasional Lapangan Dashboard (Aksi Lapangan / Layer 1) — BUKAN ARMADA:
+   · Ringkasan: Penginputan laporan operasional harian, pencatatan kendala, dan progres fisik/non-fisik.
+   · Widget Utama: Daftar Tugas Harian & Unggah Bukti Foto/Video ber-GPS, Terminal Penginputan Data Offline (Sync via LoRa/HT), dan Tombol Eskalasi Kendala Lapangan.
+8. Tim Eksekutor Harian Lapangan Dashboard (Layer 1 - Operational Control):
+   · Ringkasan: Pengawasan langsung pelaksanaan program di lokasi, pencatatan progres, dan pengiriman laporan harian ke sistem (maks. 1x24 jam).
+   · Widget Utama: Terminal Laporan Harian Executed Tasks, Papan Kendala & Milestones Wilayah, Umpan Foto/Video Ber-GPS, dan Form Koordinasi dengan Tim Verifikasi Internal (Layer 2).
+9. Tim QC Dashboard (Pengawasan Kualitas Bahan & Infrastruktur):
+   · Ringkasan: Pengujian mutu bahan bangunan, verifikasi sertifikat material, dan pemeriksaan fisik.
+   · Widget Utama: Pemindai QR Code Batch Material (Saat penerimaan logistik), Form Input Hasil Uji Kelayakan On-Site (Beton, Solar Panel, Air), Status Mutu (🟢 Lolos, 🟡 Proses, 🔴 Ditolak), dan Log Pembekuan Otomatis Vendor Bermasalah.
+10. Tim Audit & Verifikasi Dashboard - KAP & Freelance (Layer 3 & Layer 4):
+    · Ringkasan: Audit keuangan & operasional (KAP) serta audit mendadak area berisiko tinggi (Auditor Freelance Independen).
+    · Widget Utama: Penjelajah Log Transaksi Terenkripsi (SHA-256), Sistem Penugasan Sampel Acak Verifikator (Sampling 10-20%), Alat Penanda Anomali Data, dan Tombol Ekspor Laporan Resmi KAP (PDF/CSV).
+11. Shadow Team / Whistleblowing Administrator Dashboard (Layer 6 - Sanction Mechanism):
+    · Ringkasan: Penanganan pengaduan rahasia tingkat lanjut, pemantauan potensi fraud/penyalahgunaan wewenang internal, dan penegakan sanksi dewan pengawas.
+    · Widget Utama: Terminal Pengaduan Anonim Terenkripsi, Panel Peringatan Anomali/Fraud, dan Terminal Eksekusi Sanksi (Pembekuan E-Wallet, Penerbitan SP1/SP2/SP3, Denda, Blacklist, & Recording Direct Sanggah).
+12. Tim Keuangan & Escrow Manager Dashboard:
+    · Ringkasan: Pencairan dana, pengelolaan rekening escrow, dan pelacakan transaksi.
+    · Widget Utama: Matriks Pencairan Modal & Bansos, Eksekutor Pencairan Massal E-Wallet, dan Terminal Pelacak Durasi SLA Pencairan.
+13. Risk & ERRS Manager Dashboard:
+    · Ringkasan: Penanganan krisis ekonomi lokal, pencairan dana darurat, dan klaim asuransi mikro.
+    · Widget Utama: Dashboard Resiliensi Risiko Ekonomi Regional, Form Persetujuan Klaim Asuransi Mikro Otomatis, dan Kontrol Alokasi Dana Darurat (Risk Buffer).
+14. Armada Laut Dashboard (Fleet Command Master - Maritime + Cargo of Care):
+    · Ringkasan: Pengawasan pergerakan kapal laut logistik, pengiriman material, rute 3T via jalur laut, dan Misi Cargo of Care (distribusi layanan dasar, bantuan medis/sosial, edukasi, & energi terbarukan untuk wilayah terisolir 3T).
+    · Widget Utama: Peta Pelacakan Armada Laut Real-Time, Pengelola Manifest QR Code Muatan Kapal, Panel Optimasi Rute Jalur Laut, dan Panel Misi Cargo of Care (Status Misi, Muatan, Tujuan, Bukti Serah-Terima).
+15. Armada Darat Dashboard (Fleet Command Master - Land + Cargo of Care):
+    · Ringkasan: Pengawasan pergerakan truk logistik darat, pengiriman material, rute 3T via jalur darat, dan Misi Cargo of Care (distribusi layanan dasar, bantuan medis/sosial, edukasi, & energi terbarukan untuk wilayah terisolir 3T).
+    · Widget Utama: Peta Pelacakan Armada Darat Real-Time, Pengelola Manifest QR Code Muatan Truk, Panel Optimasi Rute Jalur Darat, dan Panel Misi Cargo of Care (Status Misi, Muatan, Tujuan, Bukti Serah-Terima).
+16. Armada Udara Dashboard (Fleet Command Master - Air + Cargo of Care):
+    · Ringkasan: Pengawasan pergerakan drone/pesawat logistik udara, pengiriman material ke wilayah terisolasi, rute 3T via jalur udara, dan Misi Cargo of Care (distribusi layanan dasar, bantuan medis/sosial, edukasi, & energi terbarukan untuk wilayah terisolir 3T).
+    · Widget Utama: Peta Pelacakan Armada Udara Real-Time, Pengelola Manifest QR Code Muatan Udara, Panel Optimasi Rute Jalur Udara, dan Panel Misi Cargo of Care (Status Misi, Muatan, Tujuan, Bukti Serah-Terima).
+17. Mitra Strategis Dashboard:
+    · Ringkasan: Pemantauan imbal hasil investasi (ROI), dampak sosial (SROI), dan alokasi dana program.
+    · Widget Utama: Kartu Kinerja Investasi & SROI, Filter Dropdown 248 Kategori Penerima Manfaat, dan Pemantau Program Sinergi.
+18. Warga / Beneficiary Dashboard:
+    · Ringkasan: Dompet digital (E-Wallet), status penerimaan bantuan, pelatihan, klaim asuransi, serta Saluran Whistleblowing Komunitas Warga & Tetangga Sekitar.
+    · Widget Utama: Dompet Digital & Status Pencairan, Portal Pelatihan/Lowongan Kerja Lokal, Tombol Klaim Asuransi Mikro Cepat, Pelacak Alur Bantuan A-to-Z (Style Shopee), dan Saluran Whistleblowing Warga & Tetangga Sekitar (Fitur Laporan Masyarakat Real-Time Layer 5).
+
+IV. 8 CORE ENGINE - INTERACTIVE SYSTEM CONTROL CARDS (NAMA ASLI)
+
+Setiap Kartu Engine WAJIB memiliki:
+
+1. Status Badge Live: [ONLINE / ACTIVE / 99.8% HEALTH] dengan dot warna hijau neon/teal.
+2. Metrik Kunci Real-Time:
+   · Engine 01 (Founder Business Engine / Immersive Royal Empire): Capital Allocated: Rp 850M, Investor ROI: 12.4%.
+   · Engine 02 (Social Enterprise Incubation Engine / Twin Impact Enterprise): Jobs Created: 4,850, Economic Velocity: 3.2x.
+   · Engine 03 (Global Creative Trade Engine / Seoul Bridge Platform): Export Volume: 1,200 Ton, Trade Partners: 6 Countries.
+   · Engine 04 (Media & Entertainment Economy / Gantaek Global Show): Global Audience: 2.4M, Diplomacy Index: 94/100.
+   · Engine 05 (Digital Infrastructure Economy): Encryption: Zero-Trust SHA-256, Active Nodes: 142.
+   · Engine 06 (Microinsurance Economy / Professional Insurance System): Claims Paid: 100%, Risk Buffer: Rp 120M.
+   · Engine 07 (Logistics & Production Economy / Cargo of Care Network): Supply Delivered: 98.4%, Active Cargo Fleet: 34 Units.
+   · Engine 08 (Employment & Human Capital Economy / Job Guarantee System): Matched Personnel: 54,320, Active Placements: 3,842.
+3. Fitur Expandable / Modal Detail & Interactive Button:
+   · Saat kartu Engine diklik, muncul modal/drawer detail.
+   · Tombol Aksi: "Simulasikan Parameter Engine" dan "Buka Dashboard Modul Khusus".
+4. Tampilan Visual:
+   · Icon SVG khusus untuk tiap engine.
+   · Efek hover glow (Tailwind border glow).
+
+
+Lanjutkan aplikasi "Island Odyssey Central OS" dengan 19 Role Dashboard. Pastikan TIDAK MENGHAPUS atau MERUSAK fitur yang sudah ada sebelumnya.
+
+I. MODUL UARS (TENAGA KERJA) - 19 ROLE
+
+1. JIKA ROLE = WARGA/BENEFICIARY (Mobile View):
+   · Tampilkan "UARS - Bursa Kerja & Pelatihan Warga".
+   · Card 1 (Status Pekerjaan): Pekerjaan aktif warga (contoh: "Welder Hunian Tetap — PT Bangun Palu") + status kehadiran & evaluasi.
+   · Card 2 (Lowongan Cocok): 2-3 lowongan pascabencana + match % + CTA "Lamar Pekerjaan".
+   · Card 3 (Program Pelatihan): Pelatihan warga (contoh: Las Tahan Gempa, K3 Konstruksi) + CTA "Ikuti Pelatihan".
+2. JIKA ROLE = ADMIN/HR/AUDITOR (Desktop View):
+   · Tampilkan "Dashboard UARS Analytics (Management View)".
+   · Metric Cards: Total Tenaga Kerja Terdaftar (54.320), Terverifikasi (3.842), Dalam Pelatihan (4.850), Penempatan Aktif (78).
+   · Donut Chart "Distribusi Pekerja per Sektor".
+   · Map Visual "Penempatan per Wilayah" (NTT, Maluku, Jawa Barat).
+   · Tabel "Daftar Rekomendasi Tenaga Kerja" + tombol "Tugaskan ke Posko".
+   · Diagram Alur UARS Central Database (Data Terintegrasi, Sumber Data, Output & Manfaat).
+   · Peta Sebaran Wilayah.
+3. LOGIKA SWITCHING MENU / SIDEBAR:
+   · Setiap menu Sidebar (Dashboard Overview, UARS, Ekonomi & UMKM, Monitoring 6-Layer, Keuangan, Logistik, Komunikasi, Emergency) terhubung ke activeTab React state.
+   · Saat menu diklik, konten utama BERGANTI TOTAL sesuai modul.
+
+II. MODUL TIE (TWIN IMPACT ENTERPRISE) - 19 ROLE
+
+1. DASHBOARD ARMADA LAUT (Fleet Command Master - Maritime + Cargo of Care):
+   · Header: Status Aktif Armada Laut UARS, ID Registrasi TIE, ID Kapal, Status Koneksi LoRa.
+   · Tombol: [Daftar Program / Tambah Unit Armada Laut TIE].
+   · Section 1: Interactive Fleet Map & Route Tracking (Peta live rute laut 3T + titik Cargo of Care + penjemputan komoditas).
+   · Section 2: Misi Cargo of Care & Modal (Task list pengangkutan bantuan dasar, alat medis, modal fisik via jalur laut).
+   · Section 3: Kurir Mentor & Task Pendampingan (Jadwal & checklist materi edukasi/pelatihan UARS).
+   · Section 4: Pasar & Penjemputan Tani/UMKM (Notifikasi request penjemputan hasil panen/UMKM via jalur laut).
+   · Section 5: Digital QR Scanner & Manifest (Pemindai QR Code serah-terima modal & barang online/offline via LoRa).
+   · Section 6: Pendapatan, Bagi Hasil & Insentif UARS (Wallet insentif pengemudi kapal, gaji UARS, bagi hasil logistik pasar).
+2. DASHBOARD ARMADA DARAT (Fleet Command Master - Land + Cargo of Care):
+   · Header: Status Aktif Armada Darat UARS, ID Registrasi TIE, ID Truk, Status Koneksi LoRa.
+   · Tombol: [Daftar Program / Tambah Unit Armada Darat TIE].
+   · Section 1: Interactive Fleet Map & Route Tracking (Peta live rute darat 3T + titik Cargo of Care + penjemputan komoditas).
+   · Section 2: Misi Cargo of Care & Modal (Task list pengangkutan bantuan dasar, alat medis, modal fisik via jalur darat).
+   · Section 3: Kurir Mentor & Task Pendampingan (Jadwal & checklist materi edukasi/pelatihan UARS).
+   · Section 4: Pasar & Penjemputan Tani/UMKM (Notifikasi request penjemputan hasil panen/UMKM via jalur darat).
+   · Section 5: Digital QR Scanner & Manifest (Pemindai QR Code serah-terima modal & barang online/offline via LoRa).
+   · Section 6: Pendapatan, Bagi Hasil & Insentif UARS (Wallet insentif pengemudi truk, gaji UARS, bagi hasil logistik pasar).
+3. DASHBOARD ARMADA UDARA (Fleet Command Master - Air + Cargo of Care):
+   · Header: Status Aktif Armada Udara UARS, ID Registrasi TIE, ID Drone/Pesawat, Status Koneksi LoRa.
+   · Tombol: [Daftar Program / Tambah Unit Armada Udara TIE].
+   · Section 1: Interactive Fleet Map & Route Tracking (Peta live rute udara 3T + titik Cargo of Care + penjemputan komoditas).
+   · Section 2: Misi Cargo of Care & Modal (Task list pengangkutan bantuan dasar, alat medis, modal fisik via jalur udara).
+   · Section 3: Kurir Mentor & Task Pendampingan (Jadwal & checklist materi edukasi/pelatihan UARS).
+   · Section 4: Pasar & Penjemputan Tani/UMKM (Notifikasi request penjemputan hasil panen/UMKM via jalur udara).
+   · Section 5: Digital QR Scanner & Manifest (Pemindai QR Code serah-terima modal & barang online/offline via LoRa).
+   · Section 6: Pendapatan, Bagi Hasil & Insentif UARS (Wallet insentif pilot/drone operator, gaji UARS, bagi hasil logistik pasar).
+4. DASHBOARD WARGA (Warga/Beneficiary):
+   · Header/Hero: Banner "Pendaftaran Program TIE" + Tombol [Daftar / Ajukan Bantuan Twin Impact].
+   · Card 1 (Akses Modal & Cargo of Care): Penerimaan modal & layanan dasar (Tracking Status Gradual Release Warga).
+   · Card 2 (Mentorship UARS & Pelatihan Usaha): Jadwal pelatihan bersama Kurir Mentor UARS Armada & Sesi Online Diaspora.
+   · Card 3 (Pasar Ekonomi Terpadu & Pesan Armada): Tombol "Pesan Armada Jemput", transaksi lokal & katalog pasar global.
+   · Card 4 (Dampak & Bagi Hasil Komunitas): Progress Koperasi Desa, partisipasi kelompok rentan, laporan deviden.
+   · Card 5 (Status Hunian Kota Mandiri 3T): Progress fisik rumah warga & tombol pengaduan pemeliharaan.
+   · Card 6 (Transparansi Warga): Ringkasan simpel Layer 5 (Public Transparency).
+5. DASHBOARD MITRA STRATEGIS:
+   · Header/Hero: Tombol [Gabung / Daftar Mitra Strategis TIE].
+   · Sub-Modul 1 (Penyedia Modal & Program Cargo of Care): Form alokasi hibah & distribusi modal via Armada UARS + Filter Dropdown 248 Kategori Penerima Manfaat.
+   · Sub-Modul 2 (Matriks Gradual Release & SROI): Tracker transisi kawasan 3T dari Phase 1 hingga Phase 4.
+   · Sub-Modul 3 (Jaringan Mentorship & Market Access): Pembukaan jalur akses pasar industri/global.
+   · Sub-Modul 4 (Simulator RAB Kota Mandiri 3T): Interactive budget scale calculator (Low Rp 345M, Mid Rp 650M, High Rp 850M).
+
+III. MODUL RAB & KOTA MANDIRI 3T (NON-BENCANA)
+
+1. Desktop (Mitra Strategis / Core Admin):
+   · Budget Scale Interactive Simulator (Low: Rp 345M, Mid: Rp 650M, High: Rp 850M).
+   · Target: 100% Akses Kesehatan & Pendidikan Terpadu, 80% Revitalisasi Ekonomi Lokal, 24/7 Logistik & Energi Terbarukan.
+2. Mobile (Warga Beneficiary):
+   · Card "Status Hunian & Kawasan Mandiri 3T": Progress fisik pembangunan rumah warga, transparansi alokasi dana desa, tombol pengaduan/pemeliharaan.
+
+IV. MODUL MONITORING SYSTEM 6-LAYER (19 ROLE)
+
+1. Tabel Status 6 Layer Monitoring:
+   · Layer 1: Operational Control (Tim Eksekutif Harian) — Status (Baik/Peringatan), Progress Bar (%), Timestamp.
+   · Layer 2: Internal Verification (Tim Verifikasi Internal) — Biometric + GPS Geofencing + Timestamping.
+   · Layer 3: External Audit (KAP) — Dashboard Laporan Audit, Immutable Audit Trail, One-Click Export PDF/CSV.
+   · Layer 4: Freelance Auditor (Auditor Independen) — Random Assignment, Sampling 10-20%.
+   · Layer 5: Public Transparency Dashboard — Dashboard Publik Anonim, Shopee-style Timeline A-to-Z.
+   · Layer 6: Sanction Mechanism (Dewan Pengawas & Shadow Team) — System Freeze, Panel Anomali, Video Direct Sanggah, SP1/SP2/SP3 Otomatis.
+2. Panel Notifikasi Fraud/Anomali: Kartu peringatan realtime (Transaksi tidak wajar, Data ganda NTT, Pengajuan fiktif UMKM).
+3. Widget Laporan Audit Terbaru (KAP): Opini Audit (WTP) + Tanggal Audit.
+4. Progress Verifikasi Data: Donut chart (Terverifikasi, Dalam Proses, Belum Terverifikasi).
+5. Panel Ringkasan Kasus & Tindakan: Total Kasus Bulan Ini, Kasus Selesai, Dalam Proses, Akun Diblacklist Aktif.
+
+V. MODUL KEUANGAN, E-WALLET, SANGGAH & FREEZE (19 ROLE)
+
+1. Pencairan Dana E-Wallet (All Roles):
+   · Semua 19 role dapat melihat Saldo Aktif, History Pencairan, Tombol "Tarik/Cairkan Dana".
+   · Status transaksi: Pending, Verifikasi AI/Sistem, In-Transit, Berhasil Dicairkan.
+2. Mekanisme Sanggah, Sengketa, dan Blokir Dana Sementara (System Freeze):
+   · System Freeze Otomatis/Manual saat terdeteksi kecurangan.
+   · Form Pengajuan Sanggah: Kronologi, Upload Bukti, Rekaman Video Langsung (Direct Video Record via kamera browser, bukan upload galeri).
+3. Sistem Verifikasi Random & Tim Penilai:
+   · Random Assignment ke Tim Verifikasi Pusat.
+   · Panel Penilaian Tim: Kronologi + Bukti + Rekaman Video.
+   · Keputusan Transparan: Alasan Pertimbangan + Publikasi Resmi.
+4. Transparansi Alur & History Dana Bansos/Program:
+   · Tab "History Alur Dana Program": Pusat → Hub Armada → Field Staff → Warga Penerima.
+   · SLA Time Tracking di setiap tahapan.
+
+VI. MODUL OPERASIONAL HARIAN, ABSENSI BIOMETRIC, GPS & TIMESTAMPING (19 ROLE)
+
+1. Absensi Biometric & Geolocation Real-Time:
+   · Face Recognition & Fingerprint Scan Simulation (WebAuthn).
+   · Live Geolocation & Timestamp Automatic Tagging (Latitude/Longitude, Nama Lokasi, Waktu Real-Time WIB/WITA/WIT).
+   · Status Kehadiran Terverifikasi: Wajah/Biometrik cocok + GPS dalam radius Geofencing.
+2. Integrasi 6-Layer Monitoring untuk Aktivitas Administrasi & Progres Pekerjaan:
+   · Layer 1: Log absensi hourly/daily, status pekerjaan (In Progress vs Completed), foto/video aktivitas.
+   · Layer 2: Pencocokan GPS + Biometric Wajah dengan Laporan Administrasi Daily Task.
+   · Layer 3: Log historis timestamp & audit trail immutable.
+   · Layer 4: Penilaian sampel independen.
+   · Layer 5: Visualisasi progres proyek & penyerapan dana publik.
+   · Layer 6: Freeze akun + blokir e-wallet + notifikasi ke Panel Fraud jika manipulasi terdeteksi.
+3. Tracking Pekerjaan & Pendapatan Pribadi (All Roles):
+   · Tab terpisah: Tugas Administrasi (Office) & Tugas Lapangan.
+   · Personal Income & E-Wallet Tracker: Rekapitulasi Pendapatan/Insentif Pribadi, riwayat jam kerja, potongan/pajak, tombol "Cairkan E-Wallet" (aktif hanya jika Absensi Biometrik & Task Harian tervalidasi 100%).
+
+VII. MODUL SHOPEE-STYLE TIMELINE & AUDIT TRAIL A-TO-Z (19 ROLE)
+
+1. Integrated End-to-End Tracking:
+   · Timeline vertikal dari awal sampai akhir untuk SETIAP program, tugas administrasi, pendaftaran TIE, hingga pencairan pendapatan.
+2. Auto-Backup & Immutable Log:
+   · Exact Timestamp (WIB/WITA/WIT), Koordinat GPS Presisi, ID/Nama PIC UARS/Admin, Persentase Progress (%) & Status SLA.
+3. Cross-Verification Data CCTV & Camera Drone:
+   · Tombol "Bandingkan Bukti Visual" di setiap node timeline (Gudang → Armada → Penerimaan Warga).
+   · Perbandingan otomatis: Data input manual vs CCTV Hub vs Kamera Drone Lapangan.
+
+VIII. MODUL DASBOR MONITORING WILAYAH (PER KAB/KOTA)
+
+1. Sub-Tab 1: Program Infrastruktur (Fisik) & QC Material:
+   · Peta Interaktif: Status (🟢 On Track, 🟡 Attention Needed, 🔴 Critical, ⚪ Offline LoRa).
+   · Tracking Material: Status pengiriman via Cargo of Care, volume material, MVI Health Status.
+   · QC Material & Batch Verification: Scan QR Code batch, Form Uji Kelayakan (Beton, Solar Panel, Air), Upload Bukti Multi-Sudut ber-GPS.
+   · Auto-Reject & Vendor Quarantine (Layer 6): Status Passed/Pending/Rejected. Jika Rejected → alokasi dana vendor terkunci otomatis + pengiriman ulang dipicu.
+2. Sub-Tab 2: Program Non-Infrastruktur (Sosial & Ekonomi):
+   · Tracking Program Sosial/Ekonomi: Kuota pelatihan, alokasi SDM UARS, penyerapan tenaga kerja, Indeks Resiliensi Komunitas.
+   · Coverage Beneficiary (248 Kategori): Jumlah warga sasaran terverifikasi biometrik per wilayah.
+   · Keuangan & Penyaluran: Realisasi pencairan dana TIE/Bansos, E-Wallet status, transaksi pasar/UMKM lokal.
+   · Peta Respon Pengawasan Lapangan: Status verifikasi laporan warga/tetangga oleh Layer 2 & Layer 6.
+
+IX. MODUL KHUSUS (KONSORSIUM GLOBAL, ASURANSI MIKRO, WHISTLEBLOWING, LoRa)
+
+1. Konsorsium Global & Multilateral Policy (6 Negara Mitra):
+   · Panel voting keputusan strategis konsorsium + Fitur Hak Veto 6 Negara Mitra.
+2. Microinsurance & Macro-Economic Crisis Containment (Engine 06 & ERRS):
+   · Automated Claims Portal: Form pengajuan klaim asuransi mikro otomatis untuk pekerja 3T/warga.
+   · ERRS Dashboard: Tracker inflasi makro regional + penyaluran buffer dana darurat.
+3. Anonymous Whistleblowing Channel (Shadow Team Integration):
+   · Tombol/form pengaduan anonim terenkripsi di Sidebar/Footer.
+4. 248 Beneficiary Category Selector:
+   · Dropdown/Multi-Select Filter 248 Kategori Stakeholder & Beneficiaries pada form alokasi Mitra Strategis & Dashboard HR Pusat.
+5. Offline LoRa/HT Communication Terminal:
+   · Tab/Widget Terminal Pesan Teks Sederhana berbasis radio frekuensi LoRa/HT untuk wilayah 3T.
+6. KAP Export & SP Issuance Automation:
+   · One-Click Export audit ke PDF/CSV (Layer 3).
+   · Penerbitan Surat Peringatan (SP1/SP2/SP3) otomatis dari Panel Sanksi (Layer 6).
+
+X. MODUL GRADUAL RELEASE MODEL (PHASE 1-4) & CARGO OF CARE
+
+1. Gradual Release Model:
+   · Phase 1 (Injected): Bantuan modal & Cargo of Care penuh.
+   · Phase 2 (Shared): Pendampingan bersama Kurir Mentor UARS.
+   · Phase 3 (Mentored): Kemandirian terpandu & transaksi pasar komersial.
+   · Phase 4 (Autonomous): Fully Independent Kota Mandiri 3T.
+2. Cargo of Care (3T Special Mission):
+   · Distribusi layanan dasar, kepedulian, bantuan medis/sosial, edukasi, & energi terbarukan untuk wilayah terisolir 3T.
+   · Dijalankan oleh Armada Laut, Armada Darat, dan Armada Udara.
+3. Ekonomi Multi-Aktor:
+   · Saling menguntungkan: Mitra (SROI), Armada (Insentif), Warga (Pendapatan), Sistem (Sustainabilitas).
+
+MODUL KHUSUS, DASHBOARD WILAYAH, SYSTEM PROMPT, DAN MASTER OS
+
+Lanjutkan aplikasi "Island Odyssey Central OS" dengan 19 Role Dashboard. Pastikan TIDAK MENGHAPUS atau MERUSAK fitur yang sudah ada sebelumnya.
+
+I. SYSTEM PROMPT: ISLAND ODYSSEY CENTRAL OS (KHI ARCHITECTURE INTEGRATED)
+
+Anda adalah sistem operasi inti "Island Odyssey Central OS" yang mengelola ekosistem Kebijakan & Infrastruktur KHI (8 Core Engines, 6 Layer Monitoring, dan 248 Kategori Stakeholder). Sistem harus beroperasi secara komprehensif, presisi, dan bebas dari error alur kerja.
+
+II. CORE ENGINE INTEGRATION (8 ENGINES - NAMA ASLI) - 19 ROLE
+
+1. Engine 01 - Founder Business Engine / Immersive Royal Empire: Kelola Capital Deployed, Injeksi Mitra Strategis, ROI, dan simulasi cashflow/SROI.
+2. Engine 02 - Social Enterprise Incubation Engine / Twin Impact Enterprise: Modul TIE (Jobs Created, Economic Velocity, Akses Modal, Mentorship, Bagi Hasil) & Indeks Resiliensi Komunitas.
+3. Engine 03 - Global Creative Trade Engine / Seoul Bridge Platform: Katalog Cross-Border Trade ekspor UMKM, status pabean, dan pelacakan tonase antar-negara.
+4. Engine 04 - Media & Entertainment Economy / Gantaek Global Show: Management widget kampanye publik, media tracker, dan Diplomacy Index.
+5. Engine 05 - Digital Infrastructure Economy: Zero-Trust SHA-256 encryption, 142 Active Nodes, Biometric On-Site & Offline Hash.
+6. Engine 06 - Microinsurance Economy / Professional Insurance System: Risk Buffer, Form Klaim Asuransi Mikro Otomatis, dan Macro-Economic Crisis Containment (ERRS).
+7. Engine 07 - Logistics & Production Economy / Cargo of Care Network: Cargo of Care 3T Mission, Fleet Command, QR Manifest, dan Route Optimization (Darat/Laut/Udara).
+8. Engine 08 - Employment & Human Capital Economy / Job Guarantee System: Dashboard UARS HR Pusat, Career Flow 6-Step Warga, dan Penempatan Posko/Hub 3T.
+
+III. MONITORING & GOVERNANCE LAYER (6 LAYERS & SANCTION) - 19 ROLE
+
+· Layer 1 (Operational Control): Daily task tracker, absensi hourly/daily, status task, bukti foto/video.
+· Layer 2 (Internal Verification): Biometric verification (Face/Fingerprint) + GPS Geofencing & exact timestamping.
+· Layer 3 (External Audit - KAP): Dashboard Laporan Audit KAP, Log Immutable Audit Trail, dan One-Click Export PDF/CSV.
+· Layer 4 (Freelance Auditor): Random assignment penugasan verifikator independen & evaluasi sampel.
+· Layer 5 (Public Transparency): Dashboard Publik Anonim (Shopee-style Timeline A-to-Z alur dana & bansos).
+· Layer 6 (Sanction Mechanism & Shadow Team): System Freeze/E-Wallet Lock, Panel Anomali, Video Direct Sanggah, dan Penerbitan SP1/SP2/SP3 Otomatis.
+
+IV. SPECIALIZED MODULES & REGIONAL DASHBOARD
+
+A. Konsorsium Global & Multilateral Policy (6 Negara Mitra)
+
+· Panel voting keputusan strategis konsorsium & Fitur Hak Veto oleh 6 Negara Mitra.
+
+B. Regional Program Progress Monitoring Dashboard (Dasbor Per Wilayah)
+
+· Hierarki & Map: Visualisasi peta interaktif (Pulau, Kab/Kota, Kecamatan, Posko 3T) dengan indikator status (On Track, Attention Needed, Critical, Offline LoRa).
+· Metrik Utama: Progress Realisasi (%), Capital Deployed vs Sisa Budget, Status Distribusi Cargo of Care (via Armada Laut, Darat, Udara), Coverage 248 Beneficiaries, dan Health Status MVI.
+· Fitur Aksi: Drill-down detail posko & PIC UARS, Early Warning System (Alert keterlambatan >15%/cuaca), serta Regional Report Generator.
+
+C. Tactical UI Components
+
+· Anonymous Whistleblowing Channel: Form pengaduan anonim terenkripsi di Sidebar/Footer.
+· 248 Beneficiary Category Selector: Filter Dropdown/Multi-Select 248 Kategori Stakeholder pada alokasi anggaran & HR Pusat.
+· Offline LoRa/HT Terminal: Terminal perpesanan berbasis frekuensi radio untuk sync data wilayah 3T tanpa internet.
+· Offline-First Sync Engine: Auto-reconcile & conflict resolution saat perangkat terhubung kembali ke jaringan utama.
+
+V. ROLE-BASED ACCESS CONTROL (RBAC) - 19 ROLE
+
+Sesuaikan tampilan UI dan pembatasan data secara ketat berdasarkan Role yang aktif:
+
+1. Founder / Executive View: Akses penuh Engine 01-08, Monitoring Layer 1-6, dan Hak Veto Konsorsium.
+2. Admin Pusat View: Manajemen sistem, master data, keamanan, RBAC, dan integrasi 248 Kategori.
+3. Konsorsium Global / Diplomat View: Katalog ekspor, media global, voting multilateral, dan hak veto.
+4. HR Pusat View: Matriks alokasi tenaga kerja, database keahlian, peta kebutuhan SDM.
+5. HR Lapangan Per Region View: Papan penugasan posko/hub 3T, absensi biometrik & GPS, pemantau karir.
+6. Staff Pusat View: Verifikasi dokumen, administrasi alokasi dana, Gantt Chart program nasional.
+7. Staff Operasional Lapangan View: Daftar tugas harian, upload bukti ber-GPS, terminal offline LoRa.
+8. Tim Eksekutor Harian View: Laporan harian, papan kendala & milestones, upload foto/video, koordinasi Layer 2.
+9. Tim QC View: Scan QR batch material, form uji kelayakan, status mutu, log pembekuan vendor.
+10. Tim Audit KAP & Freelance View: Penjelajah log terenkripsi, sampling acak 10-20%, penanda anomali, export PDF/CSV.
+11. Shadow Team / Whistleblowing View: Terminal pengaduan anonim, panel fraud, eksekusi sanksi (Freeze, SP1-SP3, Blacklist, Direct Sanggah).
+12. Tim Keuangan & Escrow View: Matriks pencairan modal & bansos, eksekutor pencairan massal, pelacak SLA.
+13. Risk & ERRS Manager View: Dashboard resiliensi risiko, form klaim asuransi mikro, kontrol buffer darurat.
+14. Armada Laut View: Peta pelacakan armada laut real-time, manifest QR, optimasi rute laut, dan Panel Misi Cargo of Care.
+15. Armada Darat View: Peta pelacakan armada darat real-time, manifest QR, optimasi rute darat, dan Panel Misi Cargo of Care.
+16. Armada Udara View: Peta pelacakan armada udara real-time, manifest QR, optimasi rute udara, dan Panel Misi Cargo of Care.
+17. Mitra Strategis View: Kinerja investasi & SROI, filter 248 kategori, pemantau program sinergi.
+18. Warga / Beneficiary View: E-Wallet, status bantuan (Layer 5), klaim asuransi mikro, akses TIE, whistleblowing komunitas.
+
+D. Separation of Infrastructure & Non-Infrastructure Monitoring
+
+Pada Dasbor Monitoring Wilayah Per Kab/Kota, pisahkan tampilan ke dalam 2 Sub-Tab Utama:
+
+1. Sub-Tab Infrastruktur (Fisik):
+   · Tracking proyek fisik, pengerjaan konstruksi, dan fasilitas MVI.
+   · Metrik: Progres Fisik (%), Status Pengiriman Material (Cargo of Care via Armada Laut/Darat/Udara), Foto/Video Berkoordinat GPS, Kondisi Aset Terpasang.
+2. Sub-Tab Non-Infrastruktur (Sosial & Ekonomi):
+   · Tracking program pemberdayaan, alokasi SDM UARS, dan penyaluran bantuan/dana TIE.
+   · Metrik: Coverage Beneficiary (248 Kategori) Terverifikasi Biometrik, Pencairan E-Wallet, Indeks Resiliensi Komunitas, Jumlah Tenaga Kerja Terserap.
+
+E. Sub-Modul Monitoring QC Kualitas Bahan Infrastruktur
+
+1. Digital Material Log & Batch Verification: Tracking spesifikasi teknis & sertifikasi material (SNI/ISO), verifikasi Lot/Batch via Scan QR Code saat penerimaan barang dari armada Cargo of Care di posko 3T.
+2. QC Inspection & Test Protocols (Layer 1 & 2 Integration): Form Uji Kelayakan On-Site (Uji Kuat Tekan Beton/Slump Test, Uji Ketahanan Air/Leak Test, Uji Output Voltage Solar Panel), Multi-Angle Evidence Upload, Status Kualitas Material (🟢 Passed/Approved, 🟡 Pending Test/In-Review, 🔴 Rejected/Defective).
+3. Material Quarantine & Rejection Handling (Layer 6 Integration): Jika status material Rejected, sistem otomatis mengunci alokasi pencairan dana vendor/pemasok dan memicu notifikasi peringatan ke Tim Logistics Armada untuk penggantian stok. Modul pencatatan Defect Rate (%) per vendor/pemasok sebagai basis evaluasi dan blacklist penyedia barang.
+
+VI. MASTER SYSTEM PROMPT: ISLAND ODYSSEY CENTRAL OS (PUBLIC FULL RELEASE VERSION)
+
+Anda adalah sistem operasi inti "Island Odyssey Central OS" yang mengelola ekosistem Kebijakan & Infrastruktur Pembangunan Regional berdasarkan 8 Core Engine, Diagram Alur 6 Layer Monitoring, dan 248 Kategori Penerima Manfaat/Stakeholder. Sistem beroperasi secara presisi, transparan, dan bebas dari kesalahan alur kerja menggunakan pemisahan Role-Based Access Control (RBAC) secara ketat untuk 19 Peran Pengguna.
+
+VII. STRUKTUR DIAGRAM ALUR 6 LAYER MONITORING & GOVERNANCE
+
+Sistem mengikuti aliran informasi & laporan naik ke atas, serta alur balik umpan balik/tindakan (feedback & action loop) ke bawah:
+
+· LAYER 1: OPERATIONAL CONTROL (Tim Eksekutor Harian) — Pelaksanaan program di lapangan, pencatatan kendala & progres harian. Frekuensi: Harian (Laporan ke sistem maks. 1x24 jam).
+· LAYER 2: INTERNAL VERIFICATION (Tim Verifikasi Internal) — Verifikasi data & dokumen, cek duplikasi & data fiktif, cross-check database eksternal, sampling acak 10-20% data. Frekuensi: Mingguan.
+· LAYER 3: EXTERNAL AUDIT - KAP (Audit Independen) — Audit keuangan & operasional, pemberian opini audit, publikasi laporan audit. Frekuensi: Triwulan / Tahunan.
+· LAYER 4: INDEPENDENT FREELANCE AUDITORS (Audit Dadakan) — Audit mendadak (surprise audit), fokus area berisiko tinggi, penyampaian temuan langsung ke sistem & tim pengawas. Frekuensi: Insidental.
+· LAYER 5: PUBLIC TRANSPARENCY DASHBOARD (Transparansi Publik & Whistleblowing Warga) — Penampilan alur dana & program, hasil audit (Layer 3 & 4), Fitur Laporan Masyarakat / Whistleblowing Komunitas Warga & Tetangga Sekitar. Frekuensi: Real-time.
+· LAYER 6: SANCTION MECHANISM (Dewan Pengawas & Shadow Team) — Pemberian sanksi (peringatan SP1-SP3, pembekuan E-wallet, denda, blacklist), mekanisme sanggah, publikasi hasil keputusan. Frekuensi: Aktif saat terjadi pelanggaran.
+· OUTPUT SISTEM MONITORING: Transparansi, Akuntabilitas, Pencegahan Fraud, dan Kepercayaan Publik.
+
+VIII. MODUL TAMBAHAN: DASBOR MONITORING PROGRESS PROGRAM PER WILAYAH
+
+1. Regional Mapping & Hierarchy: Visualisasi peta interaktif berbasis wilayah (Pulau, Kab/Kota, Kecamatan, hingga Posko 3T). Indikator Status Wilayah: 🟢 On Track, 🟡 Attention Needed, 🔴 Critical/Delayed, ⚪ Offline/LoRa Mode.
+2. Key Monitoring Metrics per Wilayah:
+   · Progress Realisasi Program (%): Perbandingan target vs pencapaian program fisik/sosial/ekonomi.
+   · Penyerapan Dana & Injeksi Modal (Rp): Budget Allocated vs Capital Deployed vs Sisa Budget per Zona.
+   · Status Distribusi Logistik & Cargo of Care: Posisi pengiriman material/bansos via Armada Laut, Armada Darat, dan Armada Udara, persentase penerimaan warga.
+   · Cakupan Beneficiary (248 Kategori): Jumlah warga/kelompok sasaran yang terverifikasi biometrik per wilayah.
+   · Health & Infra Status: Ketersediaan unit MVI (Solar, Air, Sanitasi, Signal LoRa) di lokasi.
+3. Interactive Regional Action Panel:
+   · Drill-down Feature: Klik wilayah tertentu untuk melihat daftar posko, penanggung jawab (PIC UARS), serta feed bukti foto/video lapangan real-time.
+   · Early Warning & Red Flag System: Notifikasi otomatis jika ada keterlambatan progres >15%, deviasi anggaran, atau kendala logistik akibat cuaca/geografis.
+   · Regional Report Generator: Tombol One-Click Export Laporan Perkembangan Wilayah (Format Executive Brief PDF / Data CSV) untuk laporan mitra & KAP.
+
+IX. MODUL TAMBAHAN: ABSENSI BIOMETRIC, GPS REAL-TIME, TIMESTAMPING, DAN MONITORING AKTIVITAS KINERJA 6-LAYER
+
+1. Modul Absensi Biometric & Geolocation Real-Time (All Roles):
+   · Face Recognition & Fingerprint Scan Simulation (WebAuthn).
+   · Live Geolocation & Timestamp Automatic Tagging (Latitude/Longitude, Nama Lokasi, Waktu Real-Time WIB/WITA/WIT).
+   · Status Kehadiran Terverifikasi: Absensi sah jika Wajah/Biometrik cocok + GPS dalam radius Geofencing.
+2. Integrasi 6-Layer Monitoring untuk Aktivitas Administrasi & Progres Pekerjaan:
+   · Layer 1: Log absensi hourly/daily, status pekerjaan (In Progress vs Completed), foto/video aktivitas harian.
+   · Layer 2: Pencocokan otomatis GPS + Biometric Wajah dengan Laporan Administrasi Daily Task.
+   · Layer 3: Log historis timestamp & audit trail data terkunci (Immutable Logs).
+   · Layer 4: Penilaian sampel independen terhadap validitas laporan pekerjaan lapangan.
+   · Layer 5: Visualisasi ringkasan progres proyek & penyerapan dana publik.
+   · Layer 6: Jika Biometric tidak sesuai, GPS terdeteksi manipulasi (Fake GPS), atau task administrasi fiktif, sistem otomatis MENGUNCI (FREEZE) akun, memblokir pencairan e-wallet, dan memasukkan notifikasi ke Panel Fraud/Anomali.
+3. Tracking Pekerjaan & Pendapatan Pribadi (All Roles):
+   · Lacak Pekerjaan Office & Lapangan: Tab terpisah untuk tugas administrasi berkas (Office) dan distribusi/mentoring (Lapangan). Fitur Upload Bukti Foto/Video/CCTV Feed.
+   · Personal Income & E-Wallet Tracker: Setiap role dapat melihat Rekapitulasi Pendapatan/Insentif Pribadi terverifikasi, riwayat jam kerja, potongan/pajak, tombol "Cairkan E-Wallet" (aktif hanya jika Absensi Biometrik & Task Harian tervalidasi 100%).
+4. Mekanisme Sanggah via Direct Video Record & Verifikator Acak:
+   · Pihak terdampak dapat mengajukan sanggahan dengan mengunggah kronologi dan MEREKAM VIDEO PENJELASAN REAL-TIME langsung melalui kamera browser/HP (Direct Video Record).
+   · Laporan sanggah dikirim ke Tim Verifikator Acak (Random Assignment) yang akan meninjau bukti video/GPS/CCTV dan menerbitkan Keputusan Resmi secara transparan.
+5. Tampilan Dashboard 6-Layer & UI Professional:
+   · UI Dashboard 6-Layer persis seperti sistem Enterprise (Tabel Status 6 Layer, Donut Chart Progress Data, Notifikasi Fraud Realtime, Card Ringkasan Kasus, Widget Audit KAP).
+   · Desain UI clean, modern, berbasis Tailwind CSS, fully responsive untuk Desktop maupun Mobile HP.
+
+X. MODUL TAMBAHAN: SHOPEE-STYLE TIMELINE & AUDIT TRAIL A-TO-Z
+
+1. Integrated End-to-End Tracking (Seperti Tracking Paket Shopee): Antarmuka visual timeline vertikal dari awal sampai akhir untuk SETIAP program, tugas administrasi office, pendaftaran TIE, hingga pencairan pendapatan pribadi semua 19 Roles.
+2. Auto-Backup & Immutable Log: Setiap ada input/perubahan sekecil apa pun, sistem otomatis melakukan auto-backup ke log server dengan menyertakan:
+   · Exact Timestamp (Tanggal, Jam, Menit, Detik - WIB/WITA/WIT).
+   · Koordinat GPS Presisi & Nama Lokasi/Hub.
+   · ID, Nama, & Penanggung Jawab UARS/Admin yang menginput.
+   · Persentase Progress (%) & Status SLA.
+3. Cross-Verification Data CCTV & Camera Drone: Di setiap titik node timeline (contoh: Gudang Persiapan -> Pengiriman Armada -> Penerimaan Warga), sediakan tombol "Bandingkan Bukti Visual". Sistem akan menampilkan perbandingan otomatis antara data input manual vs Rekaman CCTV Hub vs Footage Kamera Drone Lapangan secara real-time.
+
+XI. MODUL TAMBAHAN: TRACKING PEKERJAAN ADMINISTRATIF, LAPANGAN, & PENDAPATAN PRIBADI
+
+1. Realtime Activity Log All Roles: Lacak tugas harian sekecil apa pun (contoh: Admin upload berkas, HR verifikasi berkas, Field Staff scan QR, Armada Laut/Darat/Udara lepas jangkar, Warga klaim bansos).
+2. Jam Kerja & Dynamic Attendance: Lacak jam kerja aktif (Working Hours Tracker) untuk semua staff office dan lapangan.
+3. Personal Income & Wallet Tracker: Setiap role memiliki dashboard pribadi yang mencatat detail pendapatan, insentif harian, pajak/potongan, serta status pencairan yang terkoneksi langsung dengan penyelesaian timeline task.
+
+XII. MODUL TAMBAHAN: ABSENSI BIOMETRIC & GEOLOCATION PRESISI
+
+1. Check-in & Check-out Wajib: Verifikasi Face Recognition / Fingerprint (WebAuthn) ditambah pembacaan Live Geolocation GPS (Geofencing). Jika lokasi berada di luar radius, absensi dan task tidak dapat diproses.
+
+XIII. MODUL TAMBAHAN: DASHBOARD 6-LAYER MONITORING & SYSTEM SANCTIONS
+
+1. Halaman Khusus 6-Layer Monitoring: Tabel 6 layer (Operational Control, Internal Verification, KAP External Audit, Freelance Auditor, Public Transparency, Sanction Mechanism) lengkap dengan progress bar, status, dan timestamp.
+2. Widget Laporan Audit KAP, Progress Verifikasi Data (Donut Chart), dan Card Ringkasan Kasus/Tindakan.
+3. Fraud & Anomali Detection: Jika ditemukan ketidaksesuaian antara log timestamp dengan video CCTV/Drone, sistem otomatis membekukan (FREEZE) saldo e-wallet terkait dan mengirim notifikasi ke Panel Fraud.
+
+XIV. MODUL TAMBAHAN: MEKANISME SANGGAH VIA DIRECT VIDEO RECORDING
+
+1. Fitur Sanggah Sengketa: Pihak terdampak wajib melampirkan kronologi, bukti foto, dan MEREKAM VIDEO PENJELASAN LANGSUNG via kamera browser (Direct Video Record).
+2. Verifikator Acak (Random Assignment): Tim penilai yang diacak sistem akan meninjau bukti video, CCTV, dan footage drone, lalu menerbitkan Keputusan Resmi secara terbuka.
+
+XV. MODUL TAMBAHAN: DESAIN UI & DESKTOP/MOBILE COMPATIBILITY
+
+1. Tampilan modern, clean, intuitif berbasis Tailwind CSS.
+2. Fully Responsive untuk penggunaan via PC Desktop Kantor maupun Mobile HP Petugas Lapangan/Warga.
+
+XVI. ADDITIONAL SPECIALIZED MODULES
+
+1. Konsorsium Global, Cultural Trade & Diplomacy Panel (Engine 03 & 04):
+   · Role/Access View: Konsorsium 6 Negara Mitra, Diplomat, & Eksekutif Trade.
+   · Cross-Border Trade Catalog: Modul katalog ekspor UMKM antar-negara untuk melacak volume pengiriman (tonase), status pabean, dan negara tujuan secara real-time.
+   · Global Narrative & Diplomacy Tracker: Widget pengelolaan kampanye publik, media cetak/digital, serta pengukur Diplomacy Index (0–100).
+   · Multilateral Voting & Veto Mechanism: Panel khusus pengambilan keputusan strategis konsorsium yang dilengkapi tombol penentuan kebijakan dan penggunaan Hak Veto oleh 6 Negara Mitra.
+2. Microinsurance & Macro-Economic Crisis Containment (Engine 06 & ERRS):
+   · Role/Access View: Tim Penanggulangan Krisis & Peserta Asuransi Mikro (Warga/Pekerja).
+   · Automated Claims Portal: Form pengajuan klaim asuransi mikro otomatis untuk pekerja 3T/warga terdampak krisis sosial, bencana, atau kecelakaan kerja dengan verifikasi bukti otomatis.
+   · ERRS (Economic Risk Resilience System) Dashboard: Tracker inflasi makro regional dan penanganan risiko ekonomi lokal untuk memicu penyaluran buffer dana darurat secara presisi.
+3. Additional Tactical UI & System Component Requirements:
+   · Anonymous Whistleblowing Channel (Shadow Team Integration): Tombol/form pengaduan anonim yang terenkripsi penuh di bagian Sidebar/Footer untuk pelaporan kecurangan tanpa melacak identitas pelapor.
+   · 248 Beneficiary Category Selector: Komponen Dropdown / Multi-Select Filter yang mencakup seluruh 248 Kategori Stakeholder & Beneficiaries pada form alokasi dana Mitra Strategis dan Dashboard HR Pusat.
+   · Offline LoRa/HT Communication Terminal: Tab/Widget Terminal Pesan Teks Sederhana yang mensimulasikan transmisi data berbasis radio frekuensi LoRa/HT untuk wilayah terisolasi (3T).
+   · KAP Export & SP Issuance Automation: Fitur One-Click Export berkas audit ke format PDF/CSV resmi untuk KAP (Layer 3). Fitur penerbitan Surat Peringatan (SP1/SP2/SP3) otomatis dari Panel Sanksi (Layer 6).
+4. Dasbor Monitoring Progress Program Per Wilayah (Regional Program Tracker):
+   · Role/Access View: Tim Eksekutif Harian, Verifikator Lapangan, Mitra Strategis, & Public Dashboard (Filtered).
+   · Regional Mapping & Hierarchy: Visualisasi peta interaktif berbasis wilayah (Pulau, Kab/Kota, Kecamatan, hingga Posko 3T). Indikator Status Wilayah: 🟢 On Track, 🟡 Attention Needed, 🔴 Critical/Delayed, ⚪ Offline/LoRa Mode.
+   · Key Monitoring Metrics per Wilayah: Progress Realisasi Program (%), Penyerapan Dana & Injeksi Modal (Rp), Status Distribusi Logistik & Cargo of Care, Cakupan Beneficiary (248 Kategori), Health & Infra Status.
+   · Interactive Regional Action Panel: Drill-down Feature, Early Warning & Red Flag System, Regional Report Generator.
+
+X. TAMBAHAN WAJIB ELEMEN HAK CIPTA & FITUR MULTI-ROLE TERINTEGRASI (ALL 19 ROLES)
+
+1. DISCLAIMER HAK CIPTA KETAT (TOP OF PAGE):
+   · Pada bagian paling atas Setiap Halaman & Dashboard Role, tampilkan Banner/Header Merah-Gold Resmi:
+     "PERINGATAN HAK CIPTA: Karya Akademik Terbatas milik Dewi Wulandari Copyright ©️Februari 2026| NIM: 24121070090 LSPR. Dilarang keras mengutip, meniru, mengadaptasi, atau menggunakan sistem/arsitektur ini tanpa izin tertulis. Terlindung UU No. 28/2014 & Berne Convention."
+
+2. TABEL HISTORIS TRANSAKSI END-TO-END A-TO-Z (ALL ROLES):
+   · Sediakan Modul/Tab "Historis Transaksi Digital A-to-Z" di setiap 19 Dashboard Role.
+   · Menampilkan alur pergerakan dana/barang dari PUSAT -> HUB ARMADA -> STAFF/POSKO -> WARGA/BENEFICIARY.
+   · Lengkap dengan Hash SHA-256, Exact Timestamp (WIB/WITA/WIT), Koordinat GPS, dan Status SLA.
+
+3. INTEGRASI ABSENSI LIVE, PERIZINAN & WORKFLOW TASK (ALL ROLES):
+   · Live Biometric Attendance & Geofencing: Fitur Absensi Wajah/GPS Real-time + Form Pengajuan Izin Tidak Hadir / Libur (Alasan Sakit, Duka, Tugas Luar, dll.).
+   · Integrated Daily Task & Offline Auto-Backup: Input tugas harian terintegrasi 1x input yang otomatis sync saat offline via LoRa/Satelit dan auto-backup ke database pusat.
+   · Ambil Penawaran Kerja (Job Marketplace Inner): Sediakan tab khusus bagi Warga, Staff, dan Armada untuk mengambil tugas/penawaran kerja tambahan di sekitar posko.
+   · Delegasi & Rolling Tugas: Form khusus limpahkan/delegasikan tugas ke petugas/rekan kerja lain jika terjadi halangan darurat, sakit, atau kendala lapangan.
+
+================================================================================
+PROMPT TAMBAHAN: MODUL KELENGKAPAN 19 ROLE & 8 ENGINE / STRUKTUR PENDUKUNG
+================================================================================
+
+I. SPESIFIKASI WAJIB HAK CIPTA & DISCLAIMER (TOP OF PAGE)
+1. Tampilkan Banner/Header Merah-Gold Resmi secara permanen di bagian paling atas (Top Layer) pada seluruh 19 Dashboard Role:
+   "PERINGATAN HAK CIPTA: Karya Akademik Terbatas milik Dewi Wulandari (D.W. Reandra) | NIM: 24121070090 LSPR. Dilarang keras mengutip, meniru, mengadaptasi, atau menggunakan sistem/arsitektur ini tanpa izin tertulis. Terlindung UU No. 28/2014 & Berne Convention."
+
+II. INTEGRASI FITUR HISTORIS TRANSAKSI DIGITAL END-TO-END A-TO-Z (ALL ROLES & ENGINES)
+1. Setiap Role (dari Founder hingga Warga/Beneficiary) dan Engine (01-08) wajib memiliki modul/tab "Ledger Historis Transaksi A-to-Z".
+2. Menampilkan riwayat alur lengkap pengiriman/pencairan dari:
+   PUSAT / ESCROW -> HUB LOGISTIK / FLEET -> POSKO REGIONAL -> STAFF / EKSEKUTOR -> WARGA / BENEFICIARY.
+3. Rincian data transaksi memuat: Hash SHA-256, Exact Timestamp (WIB/WITA/WIT), Koordinat GPS Terkunci, Status SLA, dan Bukti Digital (E-Signature/QR).
+4. Khusus Public View & Auditor, tampilkan visualisasi rantai transaksi secara transparan namun anonim untuk data pribadi warga.
+
+III. INTEGRASI ABSENSI LIVE, PERIZINAN & OPERASIONAL LAPANGAN (ENGINE 02, 07, 08 & ROLES 4-8, 14-16)
+1. Live Biometric Attendance & Geofencing:
+   - Absensi wajah/GPS real-time saat mulai dan selesai bertugas untuk seluruh staf, tim eksekutor, armada (laut, darat, udara), dan QC.
+2. Form Pengajuan Izin & Libur:
+   - Fitur pengajuan izin tidak hadir (sakit, duka, tugas luar, libur terjadwal) dengan sistem persetujuan berjenjang (Approval Workflow) oleh HR Lapangan/HR Pusat.
+3. Offline-First Task Input & Auto-Sync (Engine 05 & Operational Control):
+   - Input progres tugas harian dapat dilakukan 100% offline via jaringan LoRa/HT/Satelit Terminal.
+   - Fitur 1-Click Backup & Sync yang otomatis mengunggah data progres saat perangkat terhubung kembali ke jaringan pusat.
+
+IV. SISTEM DELEGASI, ROLLING TUGAS & JOB MARKETPLACE INNER (ALL ROLES & ENGINES)
+1. Penawaran Kerja & Lowongan Padat Karya (Job Guarantee Engine 08):
+   - Fitur tab khusus "Penawaran Kerja / Tugas Tambahan" yang memungkinkan Warga (Beneficiary) dan Staf mengambil tugas proyek padat karya terdekat di sekitar posko.
+2. Delegasi & Rolling Tugas Darurat (Operational Control & Armada):
+   - Fitur "Limpahkan / Delegasikan Tugas" jika petugas/driver/pilot/pemeriksa QC mengalami kendala teknis, sakit, atau kondisi darurat di lapangan.
+   - Sistem rolling jadwal kerja otomatis untuk memastikan tidak ada kekosongan operasional di posko regional maupun armada pengiriman.
+
+V. INTEGRASI SPESIFIK ENGINE CONTROL & AUDIT TRAIL
+1. Engine 01 & Keuangan: Pencatatan historis pencairan dana modal/escrow, denda, penalti, serta e-wallet yang terbekukan akibat pelanggaran.
+2. Engine 02 (Cargo): Log rute armada, QR manifest barang, dan fitur penggantian driver/kapal/pilot saat cuaca buruk secara real-time.
+3. Engine 06 (Microinsurance): Tracking historis klaim asuransi mikro warga dan dana darurat bencana regional.
+4. Engine 09-12 (QC, Audit & Whistleblowing): Integrasi SLA retur vendor material batch, sampel audit acak oleh KAP, dan pelaporan investigasi klandestin yang aman dari kebocoran data.
+
+================================================================================
+PROMPT TAMBAHAN: MODUL KELENGKAPAN FITUR INTEGRATED SYSTEM (19 ROLES & ALL ENGINES)
+================================================================================
+
+I. WATERMARK & HEADER HAK CIPTA KETAT (PERMANENT TOP BAR)
+1. Tampilkan Banner Merah-Gold permanen di bagian atas seluruh 19 Dashboard Role:
+   "ISLAND ODYSSEY FRAMEWORK - Karya Akademik Terbatas (Limited Academic Property) - Copyright © Februari 2026 by Dewi Wulandari (D.W. Reandra) | NIM: 24121070090 LSPR. Dilarang keras mengutip, meniru, mengadaptasi, atau menggunakan sistem/arsitektur ini tanpa izin tertulis. Terlindung UU No. 28/2014 & Berne Convention. --> 
+2. Sematkan audit log SHA-256 dan watermark hak cipta otomatis pada setiap dokumen, PDF laporan KAP, dan UI screen.
+
+II. LEDGER HISTORIS TRANSAKSI END-TO-END A-TO-Z (PULSE & CASHFLOW TRACKER)
+1. Sediakan Tab "Historis Transaksi Digital A-to-Z" di 19 Role, Engine 01-08, serta Struktur Payment System & Gradual Release.
+2. Alur Pencatatan Wajib: PUSAT / ESCROW -> MITRA / DIPLOMAT -> HUB ARMADA (LAUT/DARAT/UDARA) -> POSKO REGIONAL -> STAFF / EKSEKUTOR -> WARGA / BENEFICIARY (248 Kategori).
+3. Setiap baris transaksi wajib mencakup: Hash SHA-256, Timestamp Presisi (WIB/WITA/WIT), Koordinat GPS Terkunci, Status SLA, dan Bukti Digital (E-Signature/QR).
+4. Khusus Monitoring System 6 Layer & Public View: Tampilkan rantai transaksi bergaya "Shopee-Style Audit Trail" yang transparan namun menganonimkan identitas pribadi warga.
+5. Catat secara otomatis transaksi khusus: Pencairan dana gradual, klaim asuransi mikro (Engine 06), penalti/denda, serta pemblokiran e-wallet terhukum.
+
+III. OPERASIONAL LAPANGAN, ABSENSI LIVE & MANAGEMENT PERIZINAN
+1. Live Biometric Attendance & Geofencing:
+   - Sediakan fitur Absensi Wajah & GPS Real-Time untuk seluruh Staf, HR Lapangan, Tim Eksekutor, Pengemudi/Pilot Armada, dan Inspektor QC.
+2. Form Pengajuan Izin & Libur Berjenjang:
+   - Sediakan modul pengajuan izin tidak hadir (sakit, duka, tugas luar, libur terjadwal) dengan alur persetujuan (Approval Workflow) bertingkat ke HR Lapangan dan HR Pusat.
+3. Offline-First Task Input & 1-Click Sync (Digital Infra & LoRa):
+   - Seluruh input tugas harian (UARS, QC, MVI, Konektivitas Ecobridge, dan Operasional Kota Mandiri 3T) wajib dapat diisi secara offline.
+   - Sediakan tombol "1-Click Sync & Auto-Backup" untuk mengunggah data progres tugas harian ke server pusat secara otomatis begitu perangkat terhubung ke jaringan LoRa, HT, Satelit, atau Internet.
+
+IV. JOB MARKETPLACE INNER, DELEGASI & ROLLING TUGAS DARURAT
+1. Penawaran Kerja Padat Karya (Employment Engine 08 & Social Enterprise):
+   - Sediakan Tab "Penawaran Kerja / Tugas Tambahan" yang memungkinkan Warga (Beneficiary) dan Staf mengambil peluang kerja proyek padat karya lokal di sekitar posko/Kota Mandiri 3T.
+2. Form Delegasi & Rolling Tugas Sistemik:
+   - Sediakan tombol "Delegasikan / Limpahkan Tugas" untuk situasi darurat (sakit, kendala cuaca buruk armada laut/udara, atau rintangan geografis).
+   - Sistem wajib mendukung rolling jadwal shift kerja otomatis untuk mencegah kekosongan personel di posko regional, inspeksi QC material batch, maupun armada pengiriman Cargo of Care.
+
+V. INTEGRASI SPESIFIK ENGINE CONTROL & KHUSUS KONSORSIUM
+1. Engine 04 & Orchestration 6 Mitra Negara: Sediakan form perizinan mandat diplomatik, jadwal rapat konsorsium, fitur Hak Veto Founder, dan sistem delegasi kuasa suara (proxy voting).
+2. Engine 02 (Cargo of Care) & Armada: Wajib dilengkapi QR Manifest barang, log rute perjalanan real-time, dan fitur pengalihan rute/armada darurat saat bencana.
+3. QC & Material Testing Structure: Sediakan SLA klaim retur vendor, checklist pengujian laboratorium (beton, air, solar), dan karantina material batch.
+4. Whistleblowing & Blacklist System: Sediakan form enkripsi identitas pelapor (Shadow Team), alur penyelidikan klandestin, form mekanisme sanggah formal, dan penjatuhan sanksi SP1-SP3 terintegrasi.
+
+
+
+
+"Tolong lakukan 2 pembaruan penting ini dalam 1 kali update:
+1. Tambahkan Sticky Copyright Banner & Watermark:
+* Buat komponen banner di paling atas layout (App.tsx / MainLayout.tsx) agar selalu muncul permanen di SEMUA 19 Role Dashboard.
+* Styling: Red-Gold Gradient (bg-gradient-to-r from-red-900 via-amber-700 to-red-900), teks kuning/putih bold, font kecil.
+* Teks Banner: 'PERINGATAN HAK CIPTA: Karya Akademik Terbatas milik Dewi Wulandari Copyright ©️Februari 2026| NIM: 24121070090 LSPR. Dilarang keras mengutip, meniru, mengadaptasi, atau menggunakan sistem/arsitektur ini tanpa izin tertulis. Terlindung UU No. 28/2014 & Berne Convention.'
+2. Tambahkan Multi-Step Form Wizard & Submission Preview (PAMA TSR Style):
+* Di modul pelaporan/task log harian operasional, buat komponen Form Wizard (Step 1-4) dengan indikator stepper visual di atasnya.
+* Step 1: Identitas, Jam Kerja & Shift. Step 2: Rincian Task/Unit, Lokasi GPS & Dynamic Fields. Step 3: Upload Bukti Foto/Video ber-GPS & Material/Part. Step 4: Card Preview / Ringkasan Sebelum Pengiriman.
+* Wajib tampilkan Card Ringkasan sebelum tombol 'Kirim Laporan' diklik agar user bisa recheck data."*
+* TAMBAHAN SPESIFIKASI TEKNIS (FASE 2): MISSING MODULES & UI ENHANCEMENTS
+*  
+* Instruksi: Tambahkan fitur-fitur berikut ke dalam aplikasi "Island Odyssey Central OS" tanpa merusak fitur yang sudah ada.
+* 
+* 1.Floating Panic / SOS Button (Keamanan Rumah & Bencana)
+* • Buat tombol melayang (floating button) berwarna merah menyala dengan ikon "SOS" di pojok kiri bawah layar.
+* • Tombol ini wajib muncul di semua 19 Role Dashboard (terutama di Dashboard Warga/Beneficiary).
+* • Fitur Khusus Warga (Keamanan & Bencana):
+* 	• Saat diklik, muncul modal darurat dengan pilihan kategori:
+* 		1. Keamanan Rumah: (Maling, Perampokan, Kebakaran, Kerusuhan).
+* 		2. Bencana Alam: (Gempa, Banjir, Tanah Longsor, Tsunami).
+* 		3. Medis/Evakuasi: (Butuh Ambulans, Butuh Evakuasi Darurat).
+* 	• Isi form: Lokasi GPS otomatis (terkunci), Deskripsi singkat (misal: "Ada maling di depan rumah").
+* 	• Tombol "Kirim Sinyal Darurat" (mengirim sinyal ke Posko RT/RW, Tim SAR, Polisi, atau Pemadam Kebakaran terdekat).
+* 	• Status real-time: (Sinyal Diterima -> Tim Menuju Lokasi -> Kondisi Aman). 
+* 3. Modul Rumah Subsidi (Hunian Warga 3T & Non-3T)
+* • Buat tab/halaman baru di dalam Dashboard Warga/Beneficiary dan Dashboard HR/Staff Lapangan.
+* • Fitur untuk Warga:
+* 	• Kartu "Status Hunian": Menampilkan progress pembangunan rumah (misal: Pondasi 100%, Struktur 50%, Atap 0%).
+* 	• Tombol "Ajukan Hunian Subsidi" (dengan form sederhana: Nama, NIK, Status Wilayah 3T/Non-3T, Penghasilan).
+* 	• Tombol "Lapor Kerusakan" (jika rumah sudah jadi tapi ada kendala, seperti bocor atau kerusakan struktural).
+* 	• Tombol "Panic Button Keamanan Rumah" (Terintegrasi dengan fitur SOS di atas).
+* • Fitur untuk Admin/Mitra:
+* 	• Peta sebaran rumah subsidi (titik lokasi di 3T dan Non-3T).
+* 	• Tabel daftar penerima rumah subsidi (Nama, Wilayah, Status Verifikasi).
+* 	• Simulator RAB (Rencana Anggaran Biaya) Hunian: Low (Rp 345M), Mid (Rp 650M), High (Rp 850M) per kawasan. 
+* 4. Simulator Gradual Release Model (10% per hari)
+* • Buat modul simulasi di dalam Dashboard Warga/Beneficiary atau dashboard Keuangan.
+* • Fitur: Slider atau tombol untuk mensimulasikan pencairan dana bertahap (misal: total dana Rp 1.000.000 dicairkan 10% per hari selama 10 hari).
+* • Tampilkan visualisasi progress bar dan sisa saldo setiap harinya. 
+* 5. Kalkulator Skema Keuangan 70/20/10 & Mark-up 25%
+* • Buat kalkulator interaktif (bisa di Dashboard Mitra Strategis atau Keuangan).
+* • Input: Total Dana Masuk (Rp).
+* • Output:
+* 	• 70% untuk Penerima Manfaat (0% potongan).
+* 	• 20% untuk Operasional (maksimal).
+* 	• 10% untuk Founder + Cadangan Darurat (termasuk inflasi 25%).
+* • Tampilkan hasilnya dalam bentuk Pie Chart atau angka yang jelas. 
+* 6. Tab Marketplace & Seoul Bridge (Ekspor UMKM)
+* • Buat tab/halaman baru di dalam Dashboard Konsorsium Global atau Mitra Strategis.
+* • Fitur: Katalog produk unggulan dari wilayah 3T (Papua, NTT, Maluku) dan Non-3T yang siap ekspor.
+* • Tampilkan kartu produk (Foto, Nama Produk, Asal Daerah, Volume, Negara Tujuan).
+* • Tambahkan badge "Seoul Bridge" atau "Cross-Border Trade". 
+* 7. Direktori Interaktif 248 Kategori Ekosistem
+* • Buat halaman khusus (bisa diakses dari Sidebar) berjudul "248 Kategori Ekosistem".
+* • Fitur: Tampilkan grid atau list 248 kategori.
+* • Tambahkan Filter Dropdown (Core Beneficiaries, Active Contributors, Strategic Entities, Conditional Beneficiaries).
+* • Tampilkan statistik: (205 Penerima + 43 Mitra). 
+* 8. Kartu Matriks Peran 6 Negara + Australia
+* • Di Dashboard Diplomat/Konsorsium, tambahkan kartu matriks interaktif.
+* • Isi: Peran masing-masing negara (Indonesia, Korea, China, Jepang, Mongolia, Singapura, Australia).
+* • Tambahkan simulasi Check & Balance (misal: tombol "Voting" atau "Veto" yang bisa diklik untuk melihat reaksi sistem). 
+* 9. Sakelar Mode Konektivitas (Offline-First)
+* • Di Header aplikasi (dekat profil user), tambahkan Toggle Switch / Dropdown.
+* • Pilihan: "Online", "LoRa", "HT", "SMS".
+* • Jika user memilih "LoRa" atau "Offline", tampilkan badge peringatan kuning: "Mode Offline Aktif. Data akan disinkronkan saat terhubung kembali."
+* • Simulasikan bahwa data tetap bisa diinput (tanpa memuat ulang halaman). 

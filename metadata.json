@@ -1,0 +1,6 @@
+{
+  "name": "Island Odyssey Central OS",
+  "description": "Integrated Digital Social Enterprise Ecosystem & Zero-Leakage Crisis Relief Platform for 3T and Non-3T sovereignty with 19 Role Dashboards, 8 Core Engines, and 6-Layer Monitoring.",
+  "requestFramePermissions": ["camera", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
