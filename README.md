@@ -12,20 +12,21 @@ Aplikasi ini adalah Prototype (versi purwarupa) berbasis Web yang dibangun mengg
  
 📜 DAFTAR PECAHAN IDE (Original Blueprint - Versi Dewi)
  
-Berikut adalah daftar 14 pecahan ide orisinal (menggunakan nama versi Dewi) yang dikonsepkan sejak Februari 2026 dan didaftarkan secara resmi dalam Proposal Sidang pada 7 Mei 2026 (sebagai bagian dari Capstone Project). Pecahan-pecahan ini merupakan kekayaan intelektual eksklusif Dewi Wulandari:
-1. Sosial Engine (Digitalisasi Bansos & Verifikasi Komunitas) (Konsep: Feb 2026 / Submit: 07/05/2026)
-2. Peer-to-Peer Verification (Verifikasi Wajah NIK & PIN) (Konsep: Feb 2026 / Submit: 07/05/2026)
-3. 6-Layer Monitoring System (Sistem Transparansi & Anti-Korupsi) (Konsep: Feb 2026 / Submit: 07/05/2026)
-4. Twin Impact Enterprise (Dual Impact & Pemberdayaan Ekonomi) (Konsep: Feb 2026 / Submit: 07/05/2026)
-5. Eco-Bridge & Satu Data Lintas Sektor (Konsep: Feb 2026 / Submit: 07/05/2026)
-6. Pembaruan Desil & Validasi Data Terpadu (Konsep: Feb 2026 / Submit: 07/05/2026)
-7. Seoul Bridge (Kerja Sama Global JKT x Seoul) (Konsep: Feb 2026 / Submit: 07/05/2026)
-8. China Bridge (Kolaborasi Rantai Pasok Global / Indonesia-China) (Konsep: Feb 2026 / Submit: 07/05/2026)
-9. Cargo of Care (Logistik & Distribusi 3T) (Konsep: Feb 2026 / Submit: 07/05/2026)
-10. Sosial Engine (Komunitas Perumahan Subsidi) (Konsep: Feb 2026 / Submit: 07/05/2026) (Catatan: Ini adalah nama asli, bukan "Aplikasi Bebas Pungli")
-11. Darurat Layer (SOS Panic Button & Emergency System) (Konsep: Feb 2026 / Submit: 07/05/2026) 
-(Catatan: Terdapat 14 pecahan, namun beberapa tergabung dalam kategori di atas).
- 
+Berikut adalah daftar pecahan ide orisinal (menggunakan nama versi Dewi) yang dikonsepkan sejak Februari 2026 dan didaftarkan secara resmi dalam Proposal Sidang pada 7 Mei 2026:
+1. Sosial Engine (Konsep: Feb 2026 / Submit: 07/05/2026)
+2. Peer-to-Peer Verification (Konsep: Feb 2026 / Submit: 07/05/2026)
+3. 6-Layer Monitoring System (Konsep: Feb 2026 / Submit: 07/05/2026)
+4. Twin Impact Enterprise (Konsep: Feb 2026 / Submit: 07/05/2026)
+5. Eco-Bridge (Konsep: Feb 2026 / Submit: 07/05/2026)
+6. Satu Data Lintas Sektor (Konsep: Feb 2026 / Submit: 07/05/2026)
+7. Pembaruan Desil & Validasi Data Terpadu (Konsep: Feb 2026 / Submit: 07/05/2026)
+8. Seoul Bridge (Konsep: Feb 2026 / Submit: 07/05/2026)
+9. China Bridge (Konsep: Feb 2026 / Submit: 07/05/2026)
+10. Cargo of Care (Konsep: Feb 2026 / Submit: 07/05/2026)
+11. Komunitas Perumahan Subsidi (Konsep: Feb 2026 / Submit: 07/05/2026)
+12. Darurat Layer (Konsep: Feb 2026 / Submit: 07/05/2026)
+13. Sistem Verifikasi Wajah (NIK & PIN) (Konsep: Feb 2026 / Submit: 07/05/2026)
+14. Monitoring Transparansi Data (Konsep: Feb 2026 / Submit: 07/05/2026) 
 ✨ Fitur Utama (19 Role Dashboard)
  
 Aplikasi ini memiliki 19 Role Dashboard yang berbeda, antara lain:
